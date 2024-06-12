@@ -1,17 +1,37 @@
-/* styles/3-style.css */
-
-/* Define custom properties for font-family on the root element */
+/* Define custom properties for color and font-family on the root element */
 :root {
-    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    --font-family-title: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
 }
 
 /* Set the font-family for the body using the custom property */
 body {
     font-family: var(--font-family-base);
+    color: var(--text-color);
 }
 
 /* Set the font-family for all heading tags using the custom property */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
+}
+
+/* Set display to none for all elements with the class visually-hidden */
+.visually-hidden {
+    display: none;
+}
+
+/* Set the foreground color for all elements with the class card-category and section-tagline using the custom property */
+.card-category, .section-tagline {
+    color: var(--color-primary);
+}
+
+/* Apply smooth scrolling behavior to the html element */
+html {
+    scroll-behavior: smooth;
 }
