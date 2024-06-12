@@ -1,7 +1,15 @@
 /* styles/4-style.css */
 
-/* Define custom properties for font sizes on the root selector */
+/* Custom properties */
 :root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    --font-family-title: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
     --font-size-small: 1.2rem;
     --font-size-medium: 1.6rem;
     --font-size-large: 1.8rem;
@@ -9,12 +17,34 @@
     --font-size-xx-large: 4.8rem;
 }
 
-/* Set font size for all fonts in the HTML element to 62.5% */
+/* Global styles */
 html {
-    font-size: 62.5%; /* 62.5% of the default font size (typically 16px) equals 10px */
+    scroll-behavior: smooth;
+    font-size: 62.5%; /* Set base font size to 62.5% for easy rem calculations */
 }
 
-/* Set font size for fonts in the body to font-size-medium */
 body {
+    font-family: var(--font-family-base);
     font-size: var(--font-size-medium);
+    color: var(--text-color);
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+}
+
+/* Anchor styles */
+a {
+    color: var(--text-color);
+}
+
+/* Hidden element styles */
+.visually-hidden {
+    display: none;
+}
+
+/* Category and tagline styles */
+.card-category, .section-tagline {
+    color: var(--color-primary);
 }
