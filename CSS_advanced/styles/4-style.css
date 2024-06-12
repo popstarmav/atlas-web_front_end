@@ -1,0 +1,17 @@
+/* base on styles/3-style.css */
+
+/* Define custom properties for font-family on the root element */
+:root {
+    --font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    --font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Set the font-family for the body using the custom property */
+body {
+    font-family: var(--font-family-base);
+}
+
+/* Set the font-family for all heading tags using the custom property */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-title);
+}
