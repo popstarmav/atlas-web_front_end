@@ -1,0 +1,8 @@
+/* styles/8-style.css */
+
+/* Anchor styles */
+a {
+    text-decoration: none; /* Remove text decoration */
+    color: inherit; /* Inherit color from parent */
+}
+
