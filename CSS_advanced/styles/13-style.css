@@ -1,0 +1,22 @@
+/* styles/12-style.css */
+
+/* Anchor styles */
+a[href]:link {
+    text-decoration: none;
+}
+
+/* Visited state */
+a[href]:visited {
+    font-style: italic;
+}
+
+/* Hover state */
+a[href]:hover {
+    text-decoration: underline;
+}
+
+/* Active state */
+a[href]:active {
+    background-color: var(--color-light-grey);
+}
+
