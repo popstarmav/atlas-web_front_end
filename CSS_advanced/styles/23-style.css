@@ -143,12 +143,6 @@ ul.row {
   padding: 0.5rem;
 }
 
-.col-1-3,
-.col-1-2 {
-  float: none;
-  padding: 0;
-}
-
 .col-1-3 {
   width: 33.33%;
 }
@@ -225,19 +219,15 @@ ul.row {
   padding: var(--footer-padding);
 }
 
-/* Additional styles for styles/22-style.css */
-
-/* Style the footer-address class */
+/* Additional styles for 22-style.css */
 .footer-address {
   color: var(--text-color);
 }
 
-/* Style the social-link class */
 .social-link {
   display: block;
 }
 
-/* Style the svg children inside social-link */
 .social-link svg {
   fill: var(--text-color);
 }
