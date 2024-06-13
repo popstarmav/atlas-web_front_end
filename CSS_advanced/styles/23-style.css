@@ -1,6 +1,3 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-
-/* Custom Variables */
 :root {
   /* Colors */
   --color-primary: #d73953;
@@ -11,8 +8,8 @@
 
   /* Text and fonts */
   --text-color: var(--color-black);
-  --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-base: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
   --font-size-small: 1.2rem;
   --font-size-medium: 1.6rem;
   --font-size-large: 1.8rem;
@@ -143,12 +140,6 @@ ul.row {
   padding: 0.5rem;
 }
 
-.col-1-3,
-.col-1-2 {
-  float: none;
-  padding: initial; /* Removed padding for col-1-3 and col-1-2 */
-}
-
 .col-1-3 {
   width: 33.33%;
 }
@@ -175,7 +166,7 @@ ul.row {
   color: var(--color-primary);
 }
 
-/* Accessibility */
+/* Visually hidden class */
 .visually-hidden {
   display: none;
 }
@@ -210,9 +201,28 @@ ul.row {
   color: var(--nav-item-link-hover);
 }
 
+/* Dark theme */
+[data-section-theme="dark"] {
+  --text-color: var(--color-white);
+  --section-title-color: var(--color-white);
+  background: var(--color-black);
+}
+
 /* Footer styles */
 .footer ul {
   text-align: right;
+}
+
+.social-link {
+  display: block;
+}
+
+.social-link > svg {
+  fill: var(--text-color);
+}
+
+.footer-address {
+  color: var(--text-color);
 }
 
 .footer-copyright {
@@ -223,27 +233,5 @@ ul.row {
 
 .footer {
   padding: var(--footer-padding);
-}
-
-/* Dark theme styling */
-[data-section-theme="dark"] {
-  --text-color: var(--color-white);
-  --section-title-color: var(--color-white);
-  background: var(--color-black);
-}
-
-/* Footer address */
-.footer-address {
-  color: var(--text-color); /* Set the color of the text to the text-color property */
-}
-
-/* Social link */
-.social-link {
-  display: block; /* Render as a block element */
-}
-
-/* Social link SVG children */
-.social-link svg {
-  fill: var(--text-color); /* Fill in the color of the svg children with the text-color variable */
 }
 
