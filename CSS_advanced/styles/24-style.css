@@ -242,7 +242,7 @@ ul.row {
 
 .card-services a {
   display: block; /* Renders as block-level element */
-  padding: calc(2 * var(--font-size-medium)); /* Sets padding to 2x the root element */
+  padding: 2rem; /* Sets padding to 2rem */
   background-color: var(--color-light-grey); /* Sets background color */
   text-decoration: none; /* Removes text decoration */
 }
