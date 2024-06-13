@@ -226,6 +226,18 @@ template {
     --nav-item-link-hover: var(--color-primary);
 }
 
+/* Simplify the col selector */
+[class^="col-"] {
+    float: left;
+    padding: calc( var(--font-size-medium) / 2 );
+}
+
+.col-1-3,
+.col-1-2 {
+    float: none;
+    padding: 0;
+}
+
 /* Global styles */
 *,
 *:before,
@@ -348,19 +360,27 @@ a:active {
 }
 
 /* Grid layout */
-[class^="col-"] {
-    float: left;
-    padding: calc( var(--font-size-medium) / 2 );
+ul.row {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.col-1-3,
+.col-1-3 {
+    width: 33.33%;
+}
+
 .col-1-2 {
-    float: none;
-    padding: 0;
+    width: 50%;
+}
+
+[class^="col-"] {
+    float: left;
+    padding: 0.5rem;
 }
 
 .row::after {
-    content: "";
+    content: none;
     display: table;
     clear: both;
 }
