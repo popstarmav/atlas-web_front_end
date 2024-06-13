@@ -143,6 +143,12 @@ ul.row {
   padding: 0.5rem;
 }
 
+.col-1-3,
+.col-1-2 {
+  float: none;
+  padding: initial; /* Removed padding for col-1-3 and col-1-2 */
+}
+
 .col-1-3 {
   width: 33.33%;
 }
@@ -219,16 +225,25 @@ ul.row {
   padding: var(--footer-padding);
 }
 
-/* Additional styles for 22-style.css */
+/* Dark theme styling */
+[data-section-theme="dark"] {
+  --text-color: var(--color-white);
+  --section-title-color: var(--color-white);
+  background: var(--color-black);
+}
+
+/* Footer address */
 .footer-address {
-  color: var(--text-color);
+  color: var(--text-color); /* Set the color of the text to the text-color property */
 }
 
+/* Social link */
 .social-link {
-  display: block;
+  display: block; /* Render as a block element */
 }
 
+/* Social link SVG children */
 .social-link svg {
-  fill: var(--text-color); /* Ensure svg children inherit text color */
+  fill: var(--text-color); /* Fill in the color of the svg children with the text-color variable */
 }
 
