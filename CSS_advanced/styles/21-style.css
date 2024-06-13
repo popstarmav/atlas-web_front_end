@@ -232,6 +232,7 @@ template {
     padding: calc( var(--font-size-medium) / 2 );
 }
 
+/* Remove float and padding from specific classes */
 .col-1-3,
 .col-1-2 {
     float: none;
