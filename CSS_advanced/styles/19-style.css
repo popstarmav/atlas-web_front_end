@@ -1,0 +1,45 @@
+/* Based on styles/18-style.css */
+
+/* Custom properties */
+:root {
+  --section-tagline-margin: 0;
+}
+
+/* Styles for section-tagline class */
+.section-tagline {
+  margin: var(--section-tagline-margin);
+}
+
+/* Styles for ul with class row */
+ul.row {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* Styles for col-1-3 class */
+.col-1-3 {
+  width: 33.33%;
+  float: left;
+  padding: calc(0.5 * (5rem + 0)); /* Half of the root element's padding */
+}
+
+/* Styles for col-1-2 class */
+.col-1-2 {
+  width: 50%;
+  float: left;
+  padding: calc(0.5 * (5rem + 0)); /* Half of the root element's padding */
+}
+
+/* Styles for footer-copyright class */
+.footer-copyright {
+  margin: 0;
+  font-size: var(--font-size-small); /* Assuming this is defined elsewhere */
+  color: var(--text-color);
+}
+
+/* Styles for ul in footer class */
+.footer ul {
+  text-align: right;
+}
+
