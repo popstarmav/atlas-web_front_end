@@ -39,7 +39,3 @@ Each project directory contains its own README with specific instructions and re
 ## Author
 
 Atlas School
-
-## License
-
-This project is licensed under the terms of the included license file.
